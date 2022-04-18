@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        h1, h2, h3, p {
+            padding: .25rem 1rem ;
+        }
+
+        .grid--container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+                    "header header header header header"
+                    "navigation content content content sidebar"
+                     ". footer footer footer .";
+            align-content: stretch;
+            grid-gap: 1rem;
+        }
+        .grid--element {
+            background-color: lightgray;
+        }
+
+        .grid--header {
+            grid-area: header;
+        }
+        .grid--content {
+            grid-area: content;
+        }
+        .grid--navigation {
+            grid-area: navigation;
+        }
+        .grid--footer {
+            grid-area: footer;
+        }
+        .grid--sidebar {
+            grid-area: sidebar;
+        }
+        @media only screen and (max-width: 768px) {
+            .grid--container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "navigation"
+                    "content"
+                    "sidebar"
+                     "footer"
+            ;
+                align-content: stretch;
+                grid-gap: .5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid--container">
+        <div class="grid--element grid--header">
+            <h2>Header</h2>
+        </div>
+        <div class="grid--element grid--navigation">
+            <h2>Navigation</h2>
+        </div>
+        <div class="grid--element grid--content">
+            <br>
+            <h2>Content</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida at ex ut posuere. Fusce dignissim sem at lobortis mollis.
+                Vestibulum ultrices lorem at felis pharetra, et pulvinar ex cursus. Duis fermentum ultrices lacinia. Donec in turpis a augue semper
+                tempus vel sed augue. Quisque in erat eu risus tincidunt ultrices. Phasellus libero arcu, dapibus ac urna at, venenatis sagittis urna.
+                Praesent ut dolor feugiat, pretium quam dapibus, iaculis nisi. Donec consequat rutrum urna vitae scelerisque. Nunc non dui a tellus varius
+                lobortis nec ac nunc. Ut vitae fringilla sapien. Phasellus mattis turpis ultricies ipsum rutrum sollicitudin. Cras sed est diam.
+                Praesent metus dolor, dapibus at vehicula in, vulputate ut ipsum.
+            </p>
+            <p>
+                Quisque sit amet urna nec dolor tincidunt accumsan. Mauris ultricies varius magna, vitae blandit erat lobortis sed.
+                Integer imperdiet diam sollicitudin justo luctus ornare. Sed nec turpis tristique, pharetra ipsum nec, bibendum mi.
+                Nullam dictum urna erat, a maximus arcu placerat sit amet. Suspendisse potenti. Aliquam pretium sapien at varius consectetur.
+                Quisque a augue quis ipsum posuere scelerisque. Mauris in sollicitudin velit. In consequat, ipsum nec ultricies pulvinar,
+                tortor magna ultricies tellus, non fermentum neque mi in nisl.
+            </p>
+            <p>
+                Phasellus mattis leo at condimentum pellentesque. Phasellus efficitur tellus a odio sagittis laoreet. Suspendisse vitae nunc ut urna mollis
+                aliquam nec at orci. Donec commodo rutrum venenatis. Suspendisse erat ipsum, aliquam sit amet suscipit elementum, elementum quis orci.
+                Sed posuere odio eu mauris condimentum, vitae sollicitudin nibh tincidunt. Phasellus tellus neque, consectetur vel velit eu,
+                viverra aliquet nisl. Donec feugiat, est eu interdum pulvinar, ex enim luctus nisi, sit amet commodo mauris libero non enim.
+                Aenean eget nibh auctor, faucibus sem at, ultricies ex. Sed nulla nibh, dictum eu dapibus sed, mollis in arcu. Praesent placerat libero mauris,
+                finibus pulvinar odio vulputate ut. Donec feugiat mauris varius, tempor est sit amet, interdum augue. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae; Suspendisse potenti. Sed dapibus enim sit amet diam faucibus sollicitudin.
+            </p>
+        </div>
+        <div class="grid--element grid--sidebar">
+            <h2>Sidebar</h2>
+        </div>
+        <div class="grid--element grid--footer">
+            <h2>Footer</h2>
+        </div>
+
+    </div>
+</body>
+</html>
