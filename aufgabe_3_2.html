@@ -11,12 +11,10 @@
 
         .grid--container {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
             grid-template-areas:
                     "header header header header header"
                     "navigation content content content sidebar"
                      ". footer footer footer .";
-            align-content: stretch;
             grid-gap: 1rem;
         }
         .grid--element {
