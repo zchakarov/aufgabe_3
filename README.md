@@ -15,4 +15,4 @@ Tailwind benutzt Utility Klassen, die direkt in dem HTML-Template eingebaut werd
 SASS ist eine Erweiterung von CSS3, die ganz viele Werkzeuge bietet, das Schreiben von CSS-Code zu verbessern. Beim SASS kann mann Variablen, Verschachtelung, Modulen usw benutzen. Der einzige Nachteil für mich ist immer die Benennung von neuen Klassen. Das Problem habe ich nicht, wenn ich Bootstrap ( in diesem Fall Tailwind ) benutze.
 
 Aufgabe 3.5
-Diese Aufgabe werde ich am 25/26 April einfügen.
+Mit dem CSS Box-Model beschreibt man, wie alle Block-Elemente dargestellt werden. Diese besitzen die Eigenschaften width (Breite) , height (Höhe), padding (innerer Abstand), border(Rahmen) und margin(außerer Abstand) 
